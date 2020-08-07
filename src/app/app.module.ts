@@ -9,6 +9,9 @@ import { ProgramFilterComponent } from './components/program-filter/program-filt
 import { ProgramListComponent } from './components/program-list/program-list.component';
 import { ProgramComponent } from './components/program/program.component';
 import { FormsModule } from '@angular/forms';
+import { PanelModule } from 'primeng/panel';
+import { ButtonModule } from 'primeng/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,9 +23,12 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    FormsModule,
     CardModule,
     RadioButtonModule,
-    FormsModule
+    PanelModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

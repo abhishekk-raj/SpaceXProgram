@@ -1,7 +1,15 @@
 .sxp-app-component {
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .dev-name {
   font-weight: 500;
+}
+
+.header-footer {
+  height: 4rem;
+}
+
+.main-content-section {
+  height: calc(100vh - 9rem);
 }

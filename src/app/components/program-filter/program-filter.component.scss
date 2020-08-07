@@ -13,16 +13,16 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 
   span {
     background-color: $sxp-color-green-300;
-    padding: 0.5rem 2.5rem;;
+    padding: 0.3rem 1.5rem;
     cursor: pointer;
     font-weight: bold;
-    transition: all .2s ease;
-    font-size: 14px;
+    transition: all 0.2s ease;
+    font-size: 0.7rem;
     border-radius: 0.5rem;
   }
 

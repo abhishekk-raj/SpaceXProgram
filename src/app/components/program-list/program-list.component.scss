@@ -1,0 +1,30 @@
+@import "../../../assets/styles/variables";
+
+.program-list-component {
+  max-height: calc(100vh - 8rem);
+  overflow: auto;
+}
+
+.card-image {
+  background: $sxp-color-body;
+  padding: 1rem;
+  border: 10px solid $sxp-color-white;
+}
+
+.program-item-value {
+  font-weight: 400;
+}
+
+:host {
+  ::ng-deep {
+
+    .p-card .p-card-body {
+      padding: 0 1rem;
+    }
+
+    .p-card .p-card-content {
+      padding: 0.5rem 0 1rem 0;
+    }
+
+  }
+}

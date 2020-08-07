@@ -1,1 +1,22 @@
-Program list
+<div class="program-list-component p-grid">
+  <p-card styleClass="ui-card-shadow" class="p-col-12 p-md-6 p-lg-3" *ngFor="let program of programList">
+    <p-header>
+      <img alt="mission-icon" class="card-image" [src]="program.links.mission_patch_small">
+    </p-header>
+
+    <div>
+      <h6 class="p-m-0">{{program.mission_name}} <span>#{{program.flight_number}}</span></h6>
+      <h6 class="p-m-0">Mission Ids</h6>
+      <ul class="p-m-0">
+        <li *ngFor="let missionId of program.mission_id">
+          <p class="p-m-0" style="font-size: 0.6rem;">{{missionId}}</p>
+        </li>
+      </ul>
+      <h6 class="p-m-0">Launch Year: <span class="program-item-value">{{program.launch_year}}</span></h6>
+      <h6 class="p-m-0">Successful Launch: <span class="program-item-value">{{program.launch_success}}</span></h6>
+      <h6 class="p-m-0">Successful Landing: <span
+        class="program-item-value">{{program.rocket.first_stage.cores[program.rocket.first_stage.cores.length - 1].land_success}}</span>
+      </h6>
+    </div>
+  </p-card>
+</div>

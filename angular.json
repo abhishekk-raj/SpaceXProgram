@@ -26,7 +26,8 @@
             "styles": [
               "src/styles.scss",
               "node_modules/primeflex/primeflex.css",
-              "node_modules/primeng/resources/themes/md-light-indigo/theme.css"
+              "node_modules/primeng/resources/themes/md-light-indigo/theme.css",
+              "node_modules/primeicons/primeicons.css"
             ],
             "scripts": []
           },
