@@ -1,0 +1,64 @@
+<p-card header="Filters">
+  <div class="p-grid p-align-center p-dir-col p-p-1">
+    <h5 class="p-m-0">Launch Year</h5>
+    <hr>
+  </div>
+
+  <div class="p-grid">
+    <ul style="width: 100%">
+      <li class="p-col-6" *ngFor="let launchYear of launchYearList">
+        <label>
+          <input type="radio" name="launchYear" [(ngModel)]="selectedLaunchYear" [value]="launchYear"/>
+          <span>{{launchYear}}</span>
+        </label>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="p-grid p-align-center p-dir-col p-p-1 p-mt-5">
+    <h5 class="p-m-0">Successful Launch</h5>
+    <hr>
+  </div>
+
+  <div class="p-grid">
+    <ul style="width: 100%">
+      <li class="p-col-6">
+        <label>
+          <input type="radio" name="successfulLaunch" [(ngModel)]="successfulLaunch" [value]="true"/>
+          <span>True</span>
+        </label>
+      </li>
+
+      <li class="p-col-6">
+        <label>
+          <input type="radio" name="successfulLaunch" [(ngModel)]="successfulLaunch" [value]="false"/>
+          <span>False</span>
+        </label>
+      </li>
+    </ul>
+  </div>
+
+  <div class="p-grid p-align-center p-dir-col p-p-1 p-mt-5">
+    <h5 class="p-m-0">Successful Landing</h5>
+    <hr>
+  </div>
+
+  <div class="p-grid">
+    <ul style="width: 100%">
+      <li class="p-col-6">
+        <label>
+          <input type="radio" name="successfulLanding" [(ngModel)]="successfulLanding" [value]="true"/>
+          <span>True</span>
+        </label>
+      </li>
+
+      <li class="p-col-6">
+        <label>
+          <input type="radio" name="successfulLanding" [(ngModel)]="successfulLanding" [value]="false"/>
+          <span>False</span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</p-card>

@@ -1,0 +1,36 @@
+@import "../../../assets/styles/variables";
+
+:host {
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  span {
+    background-color: $sxp-color-green-300;
+    padding: 0.5rem 2.5rem;;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .2s ease;
+    font-size: 14px;
+    border-radius: 0.5rem;
+  }
+
+  input {
+    display: none;
+  }
+
+  input:checked + span {
+    background: $sxp-color-green-600;
+  }
+}

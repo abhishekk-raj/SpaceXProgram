@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+// SpaceXProgram custom scss variables
+@import "assets/styles/variables";
+
+
+body {
+  background-color: $sxp-color-body;
+  font-family: $font-family;
+}
