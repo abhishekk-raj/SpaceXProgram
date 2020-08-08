@@ -27,3 +27,42 @@ This is a front-end application which would help users to list and browse all la
 
 
 ## Project Preview
+
+#### Programs without a filter - Desktop
+
+![GitHub Logo](./src/assets/images/preview/preview_1.png)
+
+#### Programs with Year filter - Desktop
+
+![GitHub Logo](./src/assets/images/preview/preview_2.png)
+
+#### Programs with Year and Launch filter - Desktop
+
+![GitHub Logo](./src/assets/images/preview/preview_3.png)
+
+#### Programs with Year, Launch and Landing filter - Desktop
+
+![GitHub Logo](./src/assets/images/preview/preview_4.png)
+
+#### Programs with Year, Launch and Landing filter - Desktop
+
+![GitHub Logo](./src/assets/images/preview/preview_5.png)
+
+#### Programs with Year, Launch and Landing filter - Mobile
+
+![GitHub Logo](./src/assets/images/preview/preview_6.png)
+
+
+#### Programs with Year, Launch and Landing filter - Desktop
+
+![GitHub Logo](./src/assets/images/preview/preview_7.png)
+
+
+#### Programs with Year, Launch and Landing filter - iPad
+
+![GitHub Logo](./src/assets/images/preview/preview_8.png)
+
+
+#### Programs with Year, Launch and Landing filter - iPad
+
+![GitHub Logo](./src/assets/images/preview/preview_9.png)
