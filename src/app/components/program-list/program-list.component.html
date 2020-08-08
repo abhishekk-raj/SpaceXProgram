@@ -1,7 +1,9 @@
-<div class="program-list-component p-grid">
-  <p-card styleClass="ui-card-shadow" class="p-col-12 p-md-6 p-lg-3" *ngFor="let program of programList">
+<div class="program-list-component p-grid" *ngIf="programList?.length > 0; else empty_program_list">
+  <p-card styleClass="ui-card-shadow" class="p-col-12 p-md-6 p-lg-3 program-list-item"
+          *ngFor="let program of programList">
     <p-header>
-      <img alt="mission-icon" class="card-image" [src]="program.links.mission_patch_small">
+      <img alt="mission-icon" class="card-image"
+           [src]="program.links.mission_patch_small ? program.links.mission_patch_small : 'assets/images/no-preview.png'">
     </p-header>
 
     <div>
@@ -20,3 +22,9 @@
     </div>
   </p-card>
 </div>
+
+<ng-template #empty_program_list>
+  <div class="p-grid p-mt-3 p-disabled p-justify-center">
+    No Program available
+  </div>
+</ng-template>

@@ -1,8 +1,22 @@
 @import "../../../assets/styles/variables";
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: scale(0.2, 0.2);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
 .program-list-component {
   max-height: calc(100vh - 8rem);
   overflow: auto;
+}
+
+.program-list-item {
+  animation: slideInFromLeft 2s forwards;
 }
 
 .card-image {
