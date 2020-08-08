@@ -1,27 +1,29 @@
 # SpaceXProgram
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
+This is Frontend application created with Angular CLI version 10.0.5.
 
-## Development server
+### Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This is a front-end application which would help users to list and browse all launches by SpaceX program. It's fully responsive application, can be fit to any screen size.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Prerequisite
 
-## Build
+* Install node version ^10
+* Install Angular CLI version 10.0.5
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Project Setup
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Clone repository - `https://github.com/abhishekk-raj/SpaceXProgram.git`
+* Goto project directory - `cd SpaceXProgram`
+* Install dependencies - `npm install`
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Run Project
 
-## Further help
+* Run command `npm run start` to run the project
+* Run command `npm run lint` to test linting issues
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Project Preview
