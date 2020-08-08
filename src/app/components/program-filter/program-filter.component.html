@@ -7,7 +7,10 @@
     <ul style="width: 100%">
       <li class="p-col-6" *ngFor="let launchYear of launchYearList">
         <label>
-          <input type="radio" name="launchYear" [(ngModel)]="selectedLaunchYear" [value]="launchYear"/>
+          <input type="radio"
+                 name="launchYear"
+                 (change)="onSelectedYearChange($event, launchYear)"
+                 [value]="launchYear"/>
           <span>{{launchYear}}</span>
         </label>
       </li>
@@ -23,14 +26,20 @@
     <ul style="width: 100%">
       <li class="p-col-6">
         <label>
-          <input type="radio" name="successfulLaunch" [(ngModel)]="successfulLaunch" [value]="true"/>
+          <input type="radio"
+                 name="successfulLaunch"
+                 (change)="onLaunchChange($event, true)"
+                 [value]="true"/>
           <span>True</span>
         </label>
       </li>
 
       <li class="p-col-6">
         <label>
-          <input type="radio" name="successfulLaunch" [(ngModel)]="successfulLaunch" [value]="false"/>
+          <input type="radio"
+                 name="successfulLaunch"
+                 (change)="onLaunchChange($event, false)"
+                 [value]="false"/>
           <span>False</span>
         </label>
       </li>
@@ -45,14 +54,20 @@
     <ul style="width: 100%">
       <li class="p-col-6">
         <label>
-          <input type="radio" name="successfulLanding" [(ngModel)]="successfulLanding" [value]="true"/>
+          <input type="radio"
+                 name="successfulLanding"
+                 (change)="onLandingChange($event, true)"
+                 [value]="true"/>
           <span>True</span>
         </label>
       </li>
 
       <li class="p-col-6">
         <label>
-          <input type="radio" name="successfulLanding" [(ngModel)]="successfulLanding" [value]="false"/>
+          <input type="radio"
+                 name="successfulLanding"
+                 (change)="onLandingChange($event, false)"
+                 [value]="false"/>
           <span>False</span>
         </label>
       </li>

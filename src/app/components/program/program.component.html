@@ -1,8 +1,16 @@
 <div class="p-grid">
   <div class="p-col-12 p-lg-3">
-    <sxp-program-filter></sxp-program-filter>
+    <sxp-program-filter
+      (selectedLaunchYear)="onProgramYearChange($event)"
+      (successfulLaunch)="onLaunchChange($event)"
+      (successfulLanding)="onLandingChange($event)">
+    </sxp-program-filter>
   </div>
   <div class="p-col-12 p-lg-9">
-    <sxp-program-list></sxp-program-list>
+    <sxp-program-list
+      [launchYear]="selectedProgramYear"
+      [successfulLanding]="successfulLanding"
+      [successfulLaunch]="successfulLaunch">
+    </sxp-program-list>
   </div>
 </div>
